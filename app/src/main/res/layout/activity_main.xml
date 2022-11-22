@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Write here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@id/edtInfo"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/edtInfo"
+        app:layout_constraintTop_toBottomOf="@id/edtInfo"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        android:text="SAVE"
+        android:backgroundTint="@color/green"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintTop_toBottomOf="@id/txInfo"
+        app:layout_constraintStart_toStartOf="@id/txInfo"
+        app:layout_constraintEnd_toEndOf="@id/txInfo"
+        android:layout_marginTop="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
